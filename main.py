@@ -113,7 +113,7 @@ def scenario1():
         pyautogui.click(1400, 450, button='left')
 
     time.sleep(2)
-    while(not(locate_image_on_screen('clickbeeisopen.png')) or not(locate_image_on_screen('back.png'))):
+    while(not(locate_image_on_screen('clickbeeisopen.png'))):
         click_on_image('tgtray2.png')
         time.sleep(0.5)
         click_on_image('clickbee.png')
@@ -125,14 +125,10 @@ def scenario1():
         pyautogui.click(1400, 450, button='left')
         time.sleep(1)
 
-
-
     if locate_image_on_screen('congratulations.png'):
         pygame.mixer.music.load('beep.wav')
         pygame.mixer.music.play()
 
-    if locate_image_on_screen('ohnosites.png'):
-        click_on_image('back.png')
 
 def scenario2():
     if locate_image_on_screen('jointhechannel.png'):
