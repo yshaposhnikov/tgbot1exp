@@ -547,7 +547,7 @@ def on_press(key):
 def main():
     listener = keyboard.Listener(on_press=on_press)
     listener.start()
-    print("Нажмите на ПРОБЕЛ, чтобы начать/остановить выполнение сценариев.")
+    print("Нажмите на ПРОБЕЛ, чтобы начать/остановить выполнение сценариев...")
     pygame.mixer.music.load('beepposts.wav')
 
     while True:
