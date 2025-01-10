@@ -60,7 +60,7 @@ def scenario0():
     for func in function_calls:
         func()
 
-    time.sleep(1)
+    time.sleep(2)
 
     if locate_image_on_screen('startthebot.png'):
         scenario3()
@@ -262,11 +262,8 @@ def scenario3():
 
         time.sleep(0.5)
         click_on_image('clickbee2.png')
-        time.sleep(0.5)
+        time.sleep(1)
         click_on_image('started.png')
-        location4 = locate_image_on_screen('started.png')
-        while location4:
-            time.sleep(1)
         time.sleep(1)
         pyautogui.press('enter')
         time.sleep(1)
@@ -293,11 +290,8 @@ def scenario3():
             return
         time.sleep(0.5)
         click_on_image('clickbee2.png')
-        time.sleep(0.5)
+        time.sleep(1)
         click_on_image('started.png')
-        location4 = locate_image_on_screen('started.png')
-        while location4:
-            time.sleep(1)
         time.sleep(1)
         pyautogui.press('enter')
         time.sleep(1)
@@ -324,11 +318,8 @@ def scenario3():
 
         time.sleep(0.5)
         click_on_image('clickbee2.png')
-        time.sleep(0.5)
+        time.sleep(1)
         click_on_image('started.png')
-        location4 = locate_image_on_screen('started.png')
-        while location4:
-            time.sleep(1)
         time.sleep(1)
         pyautogui.press('enter')
         time.sleep(1)
@@ -355,11 +346,8 @@ def scenario3():
 
         time.sleep(0.5)
         click_on_image('clickbee2.png')
-        time.sleep(0.5)
+        time.sleep(1)
         click_on_image('started.png')
-        location4 = locate_image_on_screen('started.png')
-        while location4:
-            time.sleep(1)
         time.sleep(1)
         pyautogui.press('enter')
         time.sleep(1)
@@ -408,12 +396,8 @@ def scenario3():
         return
     time.sleep(1)
     click_on_image('clickbee2.png')
-    time.sleep(0.5)
+    time.sleep(1)
     click_on_image('started.png')
-    location4 = locate_image_on_screen('started.png')
-    time.sleep(0.5)
-    while location4:
-        time.sleep(1)
     pyautogui.press('enter')
     time.sleep(1)
     if locate_image_on_screen('congratulations.png'):
@@ -545,10 +529,12 @@ def on_press(key):
         print(f"{'Начало' if active else 'Остановка'} выполнения сценариев.")
 
 def main():
-    listener = keyboard.Listener(on_press=on_press)
-    listener.start()
-    print("Нажмите на ПРОБЕЛ, чтобы начать/остановить выполнение сценариев...")
-    pygame.mixer.music.load('beepposts.wav')
+
+    print("starting in 5 sec...")
+
+    time.sleep(5)
+    active = True
+
 
     while True:
         if active:
