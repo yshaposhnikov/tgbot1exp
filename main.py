@@ -45,6 +45,8 @@ def click_on_image(image_path):
         pyautogui.click(location)
 
 def scenario0():
+    click_on_image('clickbee3.png')
+    time.sleep(1)
     click_on_image('back.png')
     function_calls = [
         lambda: click_on_image('joinbots.png'),
@@ -62,12 +64,12 @@ def scenario0():
 
     time.sleep(2)
 
-    if locate_image_on_screen('startthebot.png'):
-        scenario3()
+    if locate_image_on_screen('joined.png'):
+        scenario2()
     elif locate_image_on_screen('gotosite.png'):
         scenario1()
-    elif locate_image_on_screen('joined.png'):
-        scenario2()
+    elif locate_image_on_screen('startthebot.png'):
+        scenario3()
     else:
         click_on_image('back.png')
 
