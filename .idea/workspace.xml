@@ -4,7 +4,7 @@
     <list default="true" id="6534e804-297d-49aa-9adc-5a3cc8b1f61a" name="Changes" comment="exps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tgbot1exp.bat" beforeDir="false" afterPath="$PROJECT_DIR$/tgbot1exp.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/started.png" beforeDir="false" afterPath="$PROJECT_DIR$/started.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1736477904677</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="exps">
+      <created>1736531094973</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736531094973</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

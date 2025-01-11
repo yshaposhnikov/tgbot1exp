@@ -177,8 +177,6 @@ def scenario2():
 
 def scenario3():
 
-    #time.sleep(2)
-    #click_on_image('startthebot.png')
     time.sleep(1)
     click_on_image('thistelegrambot.png')
     time.sleep(1)
